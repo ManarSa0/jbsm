@@ -43,7 +43,7 @@
   
             <div class="col-lg-5">
               <div class="about-img">
-                <img src="img/download (1) .png" class="img-fluid" alt="">
+                <img src= "{{ asset('public/img/download (1) .png')}}" class="img-fluid" alt="">
               </div>
             </div>
   
@@ -292,7 +292,8 @@
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="img/features-2.svg" alt="" class="img-fluid">
+                <img src="{{ asset('public/img/features-2.svg')}}"class="img-fluid">
+
               </div>
             </div>
           </div><!-- End Tab Content 2 -->
@@ -317,7 +318,7 @@
             
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="img/features-3.svg" alt="" class="img-fluid">
+              <img src="{{ asset('public/img/features-3.svg')}}"class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 3 -->
@@ -344,7 +345,7 @@
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="img/features-4.svg" alt="" class="img-fluid">
+                <img src="{{ asset('public/img/features-4.svg')}}" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 4 -->
@@ -370,7 +371,7 @@
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="img/features-5.svg" alt="" class="img-fluid">
+                <img src="{{ asset('public/img/features-5.svg')}}" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 5 -->
@@ -396,7 +397,7 @@
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="img/features-6.svg" alt="" class="img-fluid">
+                <img src="{{ asset('public/img/features-6.svg')}}" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 6 -->
@@ -421,7 +422,8 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="img/services-1.jpg" class="img-fluid" alt="">
+               
+              <img src="{{ asset('public/img/services-1.jpg')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -438,7 +440,8 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="img/services-2.jpg" class="img-fluid" alt="">
+
+                <img src="{{ asset('public/img/services-2.jpg')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -456,7 +459,7 @@
             
             <div class="service-item">
               <div class="img">
-                <img src="img/services-3.jpg" class="img-fluid" alt="">
+              <img src="{{ asset('public/img/services-3.jpg')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -473,7 +476,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
               <div class="img">
-                <img src="img/services-4.jpg" class="img-fluid" alt="">
+              <img src="{{ asset('public/img/services-4.jpg')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -491,7 +494,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
               <div class="img">
-                <img src="img/services-5.jpg" class="img-fluid" alt="">
+              <img src="{{ asset('public/img/services-5.jpg')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -509,8 +512,9 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
               <div class="img">
-                <img src="img/services-6.jpg" class="img-fluid" alt="">
-              </div>
+              <img src="{{ asset('public/img/services-6.jpg')}}" class="img-fluid" alt="">
+
+             </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-chat-square-text"></i>
@@ -540,7 +544,8 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+        
+              <img src="{{ asset('public/testimonials/testimonials-1.jpg')}}"class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <div class="stars">
@@ -555,7 +560,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <img src="{{ asset('public/testimonials/testimonials-2.jpg')}}" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
                 <div class="stars">
@@ -570,7 +575,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+              <img src="{{ asset('public/testimonials/testimonials-3.jpg')}}" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
                 <div class="stars">
@@ -585,7 +590,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+              <img src="{{ asset('public/testimonials/testimonials-4.jpg')}}" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
                 <div class="stars">
@@ -600,7 +605,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+              <img src="{{ asset('public/testimonials/testimonials-5.jpg')}}" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
                 <div class="stars">
@@ -733,7 +738,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="post-box">
-              <div class="post-img"><img src="img/news.jpeg" class="img-fluid" alt=""></div>
+              <div class="post-img">< <img src="{{ asset('public/img/news.jpeg')}}" class="img-fluid" alt=""></div>
               <div class="meta">
                 <span class="post-date">Tue, December 12</span>
               </div>
@@ -752,7 +757,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="post-box">
-              <div class="post-img"><img src="img/news.jpeg" class="img-fluid" alt=""></div>
+              <div class="post-img">< <img src="{{ asset('public/img/news.jpeg')}}" class="img-fluid" alt=""></div>
               <div class="meta">
                 <span class="post-date">Fri, September 05</span>
               </div>
@@ -770,7 +775,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
             <div class="post-box">
-              <div class="post-img"><img src="img/news.jpeg" class="img-fluid" alt=""></div>
+              <div class="post-img">< <img src="{{ asset('public/img/news.jpeg')}}" class="img-fluid" alt=""></div>
               <div class="meta">
                 <span class="post-date">Tue, July 27</span>
                 
@@ -870,6 +875,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
+
               <div class="text-center"><button type="submit">ارسال</button></div>
             </form>
           </div><!-- End Contact Form -->
