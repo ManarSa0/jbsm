@@ -44,8 +44,16 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/adminhome', function () {
             return view('admin.adminhome');
         })->name('adminDashboard');
-        Route::resource('pages', PagesController::class);
+//Route::resource('suppliers', SuppliersController::class);
       
 
     });
+});
+//User
+Auth::routes();
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    //Route::get('/employe/{id}', [TowerSiteController::class, 'employees']);
+    //Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
+
 });
