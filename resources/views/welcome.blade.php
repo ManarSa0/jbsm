@@ -738,7 +738,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="post-box">
-              <div class="post-img">< <img src="{{ asset('public/img/news.jpeg')}}" class="img-fluid" alt=""></div>
+              <div class="post-img"> <img src="{{ asset('public/img/news.jpeg')}}" class="img-fluid" alt=""></div>
               <div class="meta">
                 <span class="post-date">Tue, December 12</span>
               </div>
@@ -757,7 +757,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="post-box">
-              <div class="post-img">< <img src="{{ asset('public/img/news.jpeg')}}" class="img-fluid" alt=""></div>
+              <div class="post-img"><img src="{{ asset('public/img/news.jpeg')}}" class="img-fluid" alt=""></div>
               <div class="meta">
                 <span class="post-date">Fri, September 05</span>
               </div>
