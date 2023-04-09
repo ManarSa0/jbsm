@@ -34,11 +34,15 @@ return [
     | Supported: "session"
     |
     */
-
+ 
     'guards' => [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+        ],
+        'admin' => [
+            'driver'   => 'session',
+            'provider' => 'admin',
         ],
     ],
 
@@ -64,11 +68,16 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'admin' => [
+            'driver' => 'eloquent',
+            'model'  => App\Models\User::class,
+            ]
 
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
-        // ],
+        // ],php artisan make:migration create_Users_table
+
     ],
 
     /*
@@ -85,7 +94,6 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
-
     'passwords' => [
         'users' => [
             'provider' => 'users',

@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+//Admin
+
+use App\Http\Controllers\Admin\AdminAuthController;
+
+
+
 //WebSite 
 use App\Http\Controllers\Site\Our_groupController ;
 use App\Http\Controllers\Site\SuppliersController ;
@@ -26,3 +33,19 @@ Route::get('/', function () {
 Route::get('/our_group', [Our_groupController ::class, 'index']);
 Route::get('/suppliers', [SuppliersController ::class, 'index']);
 Route::get('/news', [NewsController ::class, 'index']);
+
+
+//Admin
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/login', [AdminAuthController::class, 'getLogin'])->name('adminLogin');
+    Route::post('/login', [AdminAuthController::class, 'postLogin'])->name('adminLoginPost');
+    Route::post('/adminLogout', [AdminAuthController::class, 'adminLogout'])->name('adminLogout');
+    Route::group(['middleware' => 'adminauth'], function () {
+        Route::get('/adminhome', function () {
+            return view('admin.adminhome');
+        })->name('adminDashboard');
+        Route::resource('pages', PagesController::class);
+      
+
+    });
+});
