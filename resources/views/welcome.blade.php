@@ -545,7 +545,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
         
-              <img src="{{ asset('public/testimonials/testimonials-1.jpg')}}"class="testimonial-img" alt="">
+              <img src="{{ asset('public/img/testimonials/testimonials-1.jpg')}}"class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <div class="stars">
@@ -560,7 +560,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-              <img src="{{ asset('public/testimonials/testimonials-2.jpg')}}" class="testimonial-img" alt="">
+              <img src="{{ asset('public/img/testimonials/testimonials-2.jpg')}}" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
                 <div class="stars">
@@ -575,7 +575,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-              <img src="{{ asset('public/testimonials/testimonials-3.jpg')}}" class="testimonial-img" alt="">
+              <img src="{{ asset('public/img/testimonials/testimonials-3.jpg')}}" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
                 <div class="stars">
@@ -590,7 +590,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-              <img src="{{ asset('public/testimonials/testimonials-4.jpg')}}" class="testimonial-img" alt="">
+              <img src="{{ asset('public/img/testimonials/testimonials-4.jpg')}}" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
                 <div class="stars">
@@ -605,7 +605,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-              <img src="{{ asset('public/testimonials/testimonials-5.jpg')}}" class="testimonial-img" alt="">
+              <img src="{{ asset('public/img/testimonials/testimonials-5.jpg')}}" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
                 <div class="stars">
@@ -716,7 +716,7 @@
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("img/faq.jpg");'>&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url{{ asset('public/img/news.jpeg')}};'>&nbsp;</div>
         </div>
 
       </div>
@@ -855,27 +855,39 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form enctype="multipart/form-data" method="post"
+                   action="{{ URL :: to ('/contactUsForm')}}">
+            {{ csrf_field() }}
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="أدخل اسمك " required>
+                  @if($errors->has('name'))
+                                        <div class="error">{{ $errors->first('name') }}</div>
+                                        @endif
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="أدخل بريديك الالكتروني " required>
+                  @if($errors->has('email'))
+                                        <div class="error">{{ $errors->first('email') }}</div>
+                                        @endif
                 </div>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="العنوان" required>
+                @if($errors->has('subject'))
+                                        <div class="error">{{ $errors->first('subject') }}</div>
+                                        @endif
+             
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" placeholder="رسالتك لنا " required></textarea>
+                @if($errors->has('message'))
+                                        <div class="error">{{ $errors->first('message') }}</div>
+                                        @endif
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-
               <div class="text-center"><button type="submit">ارسال</button></div>
             </form>
           </div><!-- End Contact Form -->

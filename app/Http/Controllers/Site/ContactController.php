@@ -1,24 +1,30 @@
 <?php
 
-namespace App\Http\Controllers;
 
+namespace App\Http\Controllers\Site;
+
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
     //
-    public function index()
+          /*
+           public function index()
     {
         $allData = contact::all();
         return view('site.contactUS')->with(['allData' => $allData]);
 
     }
+          */
+
+   
     public function ContactUsForm(Request $request)
     {
         //validation
         $request->validate([
             'name' => 'required|max:255',
-            'phone' => 'required|max:255',
+           // 'phone' => 'required|max:255',
             'email' => 'required|max:255',
             'subject' => 'required|max:255',
             'message' => 'required',

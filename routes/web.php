@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\Our_groupController ;
 use App\Http\Controllers\Site\SuppliersController ;
 use App\Http\Controllers\Site\NewsController ;
+use App\Http\Controllers\Site\ContactController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +17,7 @@ use App\Http\Controllers\Site\NewsController ;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/contactUsForm', [ContactController::class, 'contactUsForm']);
 
 Route::get('/', function () {
     return view('welcome');
