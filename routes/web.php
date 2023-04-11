@@ -44,9 +44,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/adminhome', function () {
             return view('admin.adminhome');
         })->name('adminDashboard');
-   Route::resource('suppliers', SuppliersController::class);
-   Route::resource('news', NewsController::class);
-   Route::resource('gruop', GroupController::class);
+
+   //Route::resource('homepage', GroupController::class);
+   //Route::resource('gruop', GroupController::class);
+   //Route::resource('suppliers', SuppliersController::class);
+//Route::resource('news', NewsController::class);
    
 
     });

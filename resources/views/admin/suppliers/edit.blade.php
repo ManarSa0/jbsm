@@ -8,7 +8,7 @@
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('media-data.index') }}">Media</a>
+                    <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">Media</a>
                     </li>
 
                     <li class="breadcrumb-item active">Edit Media

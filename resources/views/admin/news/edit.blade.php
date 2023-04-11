@@ -9,7 +9,7 @@
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('news-data.index') }}">news</a>
+                    <li class="breadcrumb-item"><a href="{{ route('news.index') }}">news</a>
                     </li>
 
                     <li class="breadcrumb-item active">Edit 

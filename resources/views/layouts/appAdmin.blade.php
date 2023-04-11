@@ -135,11 +135,30 @@
                         <a class="has-arrow" href="{{ route('home') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="mdi mdi-view-dashboard"></i><span class="nav-text">Dashboard</span>
                         </a>
-
                     </li>
 
+                      <!--**********************************
+
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('group.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-book-open-page-variant"></i><span class="nav-text">Group</span>
+                        </a>
+                    </li>
+
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('supplires.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-email-outline"></i><span class="nav-text">Supplires</span>
+                        </a>
+
+                    </li>
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('news.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-email-outline"></i><span class="nav-text">News</span>
+                        </a>
+
+                    </li>
                   
-   <!--**********************************
+
    
                    
 

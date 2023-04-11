@@ -10,7 +10,7 @@
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('footer-pages-data.index') }}">FooterPages</a>
+                    <li class="breadcrumb-item"><a href="{{ route('group.index') }}">FooterPages</a>
                     </li>
 
                     <li class="breadcrumb-item active">Add
