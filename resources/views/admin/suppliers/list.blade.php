@@ -9,13 +9,13 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>Media</h4>
+                <h4>suppliers</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">Media</a>
+                    <li class="breadcrumb-item"><a href="{{ route('suppliers-data.index') }}">suppliers</a>
                     </li>
-                    <li class="breadcrumb-item active">Media</li>
+                    <li class="breadcrumb-item active">suppliers</li>
                 </ol>
             </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="col-lg-12">
                 <div class="card button-card">
                     <div class="card-body">
-                        <a href="{{ route('media-data.create') }}"
+                        <a href="{{ route('suppliers-data.create') }}"
                         type="button" class="btn btn-rounded btn-info" style="float: right;">
                             <span class="btn-icon-left text-info">
                                 <i class="fa fa-plus color-info"></i> </span>Add</a>
@@ -74,13 +74,13 @@
 
 
                                         <td>
-                                            <a href="{{ route('media-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
+                                            <a href="{{ route('suppliers-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
                                                 <i class="fa fa-pencil color-secondary"></i> </a>
                                         </td>
 
                                         <td>
 
-                                            <form method="POST" action="{{route('media-data.destroy', $data->id) }}">
+                                            <form method="POST" action="{{route('suppliers-data.destroy', $data->id) }}">
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-rounded btn-danger">
                                                     <i class="fa fa-close color-danger"></i></button>

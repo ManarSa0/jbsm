@@ -4,14 +4,14 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>Media</h4>
+                <h4>suppliers</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">Media</a>
+                    <li class="breadcrumb-item"><a href="{{ route('suppliers-data.index') }}">suppliers</a>
                     </li>
 
-                    <li class="breadcrumb-item active">Edit Media
+                    <li class="breadcrumb-item active">Edit suppliers
                     </li>
                 </ol>
             </div>
@@ -27,7 +27,7 @@
                         <h4 class="card-title mb-4">Edit Item</h4>
                         <div class="basic-form">
                             <form role="form" enctype="multipart/form-data" method="post"
-                            action="{{ route('media-data.update' , $editData->id) }}">
+                            action="{{ route('suppliers-data.update' , $editData->id) }}">
                                 {{ csrf_field() }}
                                 {{ method_field('PATCH') }}
 

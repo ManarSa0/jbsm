@@ -6,11 +6,11 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>FooterPages</h4>
+                <h4>Suppliers</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">FooterPages</a>
+                    <li class="breadcrumb-item"><a href="{{ route('suppliers-data.index') }}">Suppliers</a>
                     </li>
 
                     <li class="breadcrumb-item active">Add
@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4">Add New </h4>
                         <div class="basic-form">
-                            <form role="form" enctype="multipart/form-data" method="post" action="{{ route('footer-pages-data.store') }}">
+                            <form role="form" enctype="multipart/form-data" method="post" action="{{ route('suppliers-data.store') }}">
                                 {{ csrf_field() }}
 
 
@@ -105,14 +105,7 @@
                                 </div>
 
 
-                                <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> slug </label>
-                                    <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" name="slug">
-                                        </div>
-                                </div>
-                                </div>
+                             
 
 
                                 <div style="float: right;">

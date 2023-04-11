@@ -4,14 +4,14 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>Media</h4>
+                <h4>Group</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('group.index') }}">Media</a>
+                    <li class="breadcrumb-item"><a href="{{ route('group-data.index') }}">Group</a>
                     </li>
 
-                    <li class="breadcrumb-item active">Edit Media
+                    <li class="breadcrumb-item active">Edit Group
                     </li>
                 </ol>
             </div>
@@ -27,7 +27,7 @@
                         <h4 class="card-title mb-4">Edit Item</h4>
                         <div class="basic-form">
                             <form role="form" enctype="multipart/form-data" method="post"
-                            action="{{ route('media-data.update' , $editData->id) }}">
+                            action="{{ route('group-data.update' , $editData->id) }}">
                                 {{ csrf_field() }}
                                 {{ method_field('PATCH') }}
 
@@ -130,8 +130,7 @@
 
                                 <div style="float: right;">
                                     <button type="submit" class="btn btn-primary btn-form">Submit</button>
-                                    <button type="reset" class="btn btn-light btn-form">Cancel</button>
-                                </div>
+                                    <button type="reset"  class="btn btn-light btn-form"><a href="{{ route('group-data.index') }}">Cancel</a></button>                                </div>
                             </form>
                         </div>
                     </div>

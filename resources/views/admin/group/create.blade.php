@@ -6,11 +6,11 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>FooterPages</h4>
+                <h4>Group</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('group.index') }}">FooterPages</a>
+                    <li class="breadcrumb-item"><a href="{{ route('group-data.index') }}" rout>Group</a>
                     </li>
 
                     <li class="breadcrumb-item active">Add
@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4">Add New </h4>
                         <div class="basic-form">
-                            <form role="form" enctype="multipart/form-data" method="post" action="{{ route('footer-pages-data.store') }}">
+                            <form role="form" enctype="multipart/form-data" method="post" action="{{ route('group-data.store') }}">
                                 {{ csrf_field() }}
 
 
@@ -106,12 +106,27 @@
 
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> slug </label>
+                                    <label class="col-sm-3 col-form-label text-label">Upload Image</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="slug">
+                                            <input type="file" class="form-control" name="images" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
                                         </div>
+                                        @if($errors->has('image'))
+                                        <div class="error">{{ $errors->first('image') }}</div>
+                                        @endif
+
+                                    </div>
                                 </div>
+                                
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label">link</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="link" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
+                                        </div>
+                                     
+
+                                    </div>
                                 </div>
 
 

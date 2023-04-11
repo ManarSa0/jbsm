@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Jehat</title>
+    <title>JBMS</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="#">
     <link href="{{ asset('public/admin/css/style.css')}}" rel="stylesheet">
@@ -139,13 +139,13 @@
 
 
 
-
-                    <li><a class="has-arrow" href=""
+                    
+                    <li><a class="has-arrow" href="{{ route('group-data.index') }}"
                     aria-expanded="false"><i class="mdi mdi-chart-bar"></i> 
                     <span class="nav-text">Group</span> </a>
                      
                     </li>
-                    <li><a class="has-arrow" href=""
+                    <li><a class="has-arrow" href="{{ route('suppliers-data.index') }}"
                     aria-expanded="false"><i class="mdi mdi-chart-bar"></i> 
                     <span class="nav-text">Supplires</span> </a>
                      
@@ -155,7 +155,7 @@
                     <span class="nav-text">News</span> </a>
                      
                     </li>
-                  
+                    
 
    
                    
@@ -193,7 +193,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright &copy; Designed by <a href="#">Jehat</a>, Developed by <a href="#">Jehat Team</a> 2022</p>
+                <p>Copyright &copy; Designed by <a href="#">JBMS</a>, Developed by <a href="#">JBMS Team</a> 2022</p>
             </div>
         </div>
         <!--**********************************
