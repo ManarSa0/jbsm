@@ -1,13 +1,11 @@
 <?php
-
+//Admin
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-//Admin
-
 use App\Http\Controllers\Admin\AdminAuthController;
-
-
-
+use App\Http\Controllers\Admin\SuppliersAdminController;
+use App\Http\Controllers\Admin\Our_groupAdminController;
+use App\Http\Controllers\Admin\NewsAdminController;
 //WebSite 
 use App\Http\Controllers\Site\Our_groupController ;
 use App\Http\Controllers\Site\SuppliersController ;
@@ -44,11 +42,12 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/adminhome', function () {
             return view('admin.adminhome');
         })->name('adminDashboard');
+        Route::resource('news-data', NewsAdminController::class);
+
 
    //Route::resource('homepage', GroupController::class);
-   //Route::resource('gruop', GroupController::class);
-   //Route::resource('suppliers', SuppliersController::class);
-//Route::resource('news', NewsController::class);
+   //Route::resource('gruop',Our_groupAdminController::class);
+   //Route::resource('suppliers', SuppliersAdminController::class);
    
 
     });

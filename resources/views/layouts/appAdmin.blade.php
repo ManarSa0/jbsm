@@ -150,7 +150,7 @@
                     <span class="nav-text">Supplires</span> </a>
                      
                     </li>
-                    <li><a class="has-arrow" href=""
+                    <li><a class="has-arrow" href="{{ route('news-data.index') }}"
                     aria-expanded="false"><i class="mdi mdi-chart-bar"></i> 
                     <span class="nav-text">News</span> </a>
                      

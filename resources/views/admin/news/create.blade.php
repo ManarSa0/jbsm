@@ -10,7 +10,7 @@
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('news.index') }}">News</a>
+                    <li class="breadcrumb-item"><a href="{{ route('news-data.index') }}">News</a>
                     </li>
 
                     <li class="breadcrumb-item active">Add 
@@ -84,7 +84,7 @@
                                     <label class="col-sm-3 col-form-label text-label">Description (Ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <textarea  class="form-control" id="ck_editor" name="description_ar" rows="6"></textarea>
+                                            <textarea  class="form-control" id="ck_editor" name="desc_ar" rows="6"></textarea>
                                         </div>
                                         @if($errors->has('desc_ar'))
                                         <div class="error">{{ $errors->first('desc_ar') }}</div>
@@ -96,7 +96,7 @@
                                     <label class="col-sm-3 col-form-label text-label">Description (En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <textarea  class="form-control"  id="ck_editor" name="description_en" rows="6"></textarea>
+                                            <textarea  class="form-control"  id="ck_editor" name="desc_en" rows="6"></textarea>
                                         </div>
                                         @if($errors->has('desc_en'))
                                         <div class="error">{{ $errors->first('desc_en') }}</div>
@@ -123,9 +123,7 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="link" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
                                         </div>
-                                        @if($errors->has('image'))
-                                        <div class="error">{{ $errors->first('image') }}</div>
-                                        @endif
+                                     
 
                                     </div>
                                 </div>
@@ -135,16 +133,13 @@
                                         <div class="input-group">
                                             <input type="date" class="form-control" name="news_date" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
                                         </div>
-                                        @if($errors->has('image'))
-                                        <div class="error">{{ $errors->first('image') }}</div>
-                                        @endif
-
+                                   
                                     </div>
                                 </div>
 
                                 <div style="float: right;">
                                     <button type="submit" class="btn btn-primary btn-form">Submit</button>
-                                    <button type="reset" class="btn btn-light btn-form">Cancel</button>
+                                    <button type="reset"  class="btn btn-light btn-form"><a href="{{ route('news-data.index') }}">Cancel</a></button>
                                 </div>
                             </form>
                         </div>
