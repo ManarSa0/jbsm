@@ -36,16 +36,16 @@
           <div class="col-lg-8">
 
             <div class="row gy-4 posts-list">
+            @foreach($allData as $data)
 
               <div class="col-lg-6">
                 <article class="d-flex flex-column">
-
                   <div class="post-img">
-                  <img src="{{ asset('public/img/news.jpeg')}}" alt="" class="img-fluid">
+                  <img src= "{{ URL ::to ('public/upload/'.$data->images)}}" alt="" class="img-fluid">
                   </div>
 
                   <h2 class="title">
-                    <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
+                    <a href="blog-details.html">{{ $data->title_ar }}</a>
                   </h2>
 
                   <div class="meta-top">
@@ -56,16 +56,21 @@
 
                   <div class="content">
                     <p>
-                      Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                    {{ $data->desc_ar }}
                     </p>
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
                     <a href="blog-details.html">Read More</a>
                   </div>
+                 
 
-                </article>
-              </div><!-- End post list item -->
+                </article> 
+              </div>
+              @endforeach
+              
+              <!-- 
+
 
               <div class="col-lg-6">
                 <article class="d-flex flex-column">
@@ -95,7 +100,7 @@
                   </div>
 
                 </article>
-              </div><!-- End post list item -->
+              </div><!-- End post list item -
 
               <div class="col-lg-6">
                 <article class="d-flex flex-column">
@@ -125,7 +130,7 @@
                   </div>
 
                 </article>
-              </div><!-- End post list item -->
+              </div><!-- End post list item 
 
               <div class="col-lg-6">
                 <article class="d-flex flex-column">
@@ -155,8 +160,7 @@
                   </div>
 
                 </article>
-              </div><!-- End post list item -->
-
+                
               <div class="col-lg-6">
                 <article class="d-flex flex-column">
 
@@ -185,7 +189,7 @@
                   </div>
 
                 </article>
-              </div><!-- End post list item -->
+              </div><!-- End post list item --
 
               <div class="col-lg-6">
                 <article class="d-flex flex-column">
@@ -215,7 +219,12 @@
                   </div>
 
                 </article>
+              </div><!-- End post list item 
               </div><!-- End post list item -->
+           
+
+              
+
 
             </div><!-- End blog posts list -->
 
@@ -257,22 +266,24 @@
                 <h3 class="sidebar-title">Recent Posts</h3>
 
                 <div class="mt-3">
-
+                @foreach($allData as $data)
                   <div class="post-item mt-3">
-                  <img src="{{ asset('public/img/news.jpeg')}}" alt="" class="flex-shrink-0">
+                  <img src= "{{ URL ::to ('public/upload/'.$data->images)}}" alt="" class="flex-shrink-0">
                     <div>
-                      <h4><a href="blog-post.html">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
+                      <h4><a href="blog-post.html">{{ $data->title_ar }}</a></h4>
+                      <time datetime="2020-01-01">{{ $data->news_date }}</time>
                     </div>
-                  </div><!-- End recent post item-->
-
+                  </div>
+                  @endforeach
+                  <!-- End recent post item-->
+<!-- End recent post item 
                   <div class="post-item">
                   <img src="{{ asset('public/img/blog-recent-2.jpg')}}" alt="" class="flex-shrink-0">
                     <div>
                       <h4><a href="blog-post.html">Quidem autem et impedit</a></h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div>--
 
                   <div class="post-item">
                   <img src="{{ asset('public/img/blog-recent-3.jpg')}}" alt="" class="flex-shrink-0">
@@ -280,7 +291,7 @@
                       <h4><a href="blog-post.html">Id quia et et ut maxime similique occaecati ut</a></h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div><!-- End recent post item--
 
                   <div class="post-item">
                   <img src="{{ asset('public/img/blog-recent-4.jpg')}}" alt="" class="flex-shrink-0">
@@ -288,7 +299,7 @@
                       <h4><a href="blog-post.html">Laborum corporis quo dara net para</a></h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div><!-- End recent post item--
 
                   <div class="post-item">
                   <img src="{{ asset('public/img/blog-recent-5.jpg')}}" alt="" class="flex-shrink-0">
@@ -296,7 +307,7 @@
                       <h4><a href="blog-post.html">Et dolores corrupti quae illo quod dolor</a></h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div><!-- End recent post item--
 
                 </div>
 

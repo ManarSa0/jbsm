@@ -39,6 +39,33 @@
 </div>
 </section><!-- End Clients Section -->
 <!-- ======= Call To Action Section ======= -->
+@foreach($allData as $data)
+<section id="cta" class="cta">
+<div class="container" data-aos="zoom-out">
+
+<div class="row g-5">
+
+  <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+    <h3> <em>{{ $data->title_ar }}</em></h3>
+    <p> {{ $data->desc_ar }}</p>
+    <a class="cta-btn align-self-start" href="#">أذهب الى الموقع</a>
+  </div>
+
+  <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+    <div class="img">
+      <img src="{{ URL ::to ('public/upload/'.$data->images)}}"  alt="" class="img-fluid">
+    </div>
+  </div>
+
+</div>
+
+</div>
+</section>
+@endforeach
+
+<!-- End Call To Action Section -->
+<!-- ======= Call To Action Section ======= -
+
 <section id="cta" class="cta">
 <div class="container" data-aos="zoom-out">
 
@@ -64,7 +91,7 @@
 
 </div>
 </section><!-- End Call To Action Section -->
-<!-- ======= Call To Action Section ======= -->
+<!-- ======= Call To Action Section =======
 <section id="cta" class="cta">
 <div class="container" data-aos="zoom-out">
 
