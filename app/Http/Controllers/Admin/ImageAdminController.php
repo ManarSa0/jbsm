@@ -16,8 +16,8 @@ class ImageAdminController extends Controller
     public function index()
     {
         //
-        $allData = News::all();
-        return view('admin.news.list')->with(['allData' => $allData]);
+        $allData = Image::all();
+        return view('admin.image.list')->with(['allData' => $allData]);
     }
 
     /**
@@ -28,7 +28,7 @@ class ImageAdminController extends Controller
     public function create()
     {
         //
-        return view('admin.news.create');
+        return view('admin.image.create');
     }
 
     /**
@@ -49,7 +49,7 @@ class ImageAdminController extends Controller
         
         ]);
          //Store
-         $data = new News();
+         $data = new Image();
          $data->name_ar = $request->name_ar;
          $data->name_en = $request->name_en;
          
@@ -64,7 +64,7 @@ class ImageAdminController extends Controller
             $data->image = '';
         }
         $data->save();
-        return redirect()->route('news-data.index');
+        return redirect()->route('image-data.index');
     }
 
     /**
@@ -87,8 +87,8 @@ class ImageAdminController extends Controller
     public function edit($id)
     {
         //
-        $editData = News::where('id', $id)->first();
-        return view('admin.news.edit')->with(['editData' => $editData]);
+        $editData = Image::where('id', $id)->first();
+        return view('admin.image.edit')->with(['editData' => $editData]);
     }
 
     /**
@@ -111,7 +111,7 @@ class ImageAdminController extends Controller
         
         ]);
         //Update
-        $data = news::find($id);
+        $data = image::find($id);
          $data->name_ar = $request->name_ar;
          $data->name_en = $request->name_en;
               
@@ -125,7 +125,7 @@ class ImageAdminController extends Controller
         }else{  
         }
         $data->save();
-        return redirect()->route('news-data.index');
+        return redirect()->route('image-data.index');
 
     }
 
@@ -138,8 +138,8 @@ class ImageAdminController extends Controller
     public function destroy($id)
     {
         //
-        News::destroy($id);
-        return redirect()->route('news-data.index')->with('flash_message', 'Item deleted!');
+        Image::destroy($id);
+        return redirect()->route('image-data.index')->with('flash_message', 'Item deleted!');
     }
 }
 

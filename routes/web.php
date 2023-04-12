@@ -45,9 +45,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('news-data', NewsAdminController::class);
         Route::resource('suppliers-data', SuppliersAdminController::class);
         Route::resource('group-data',Our_groupAdminController::class);
+        Route::resource('image-data',ImageAdminController::class);
 
 
-   //Route::resource('homepage', GroupController::class);
    
 
     });
@@ -60,3 +60,5 @@ Route::group(['middleware' => ['auth']], function () {
     //Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
 
 });
+
+

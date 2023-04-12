@@ -155,6 +155,13 @@
                     <span class="nav-text">News</span> </a>
                      
                     </li>
+
+                    </li>
+                    <li><a class="has-arrow" href="{{ route('image-data.index') }}"
+                    aria-expanded="false"><i class="mdi mdi-chart-bar"></i> 
+                    <span class="nav-text">image</span> </a>
+                     
+                    </li>
                     
 
    
