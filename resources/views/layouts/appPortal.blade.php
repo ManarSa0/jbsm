@@ -52,6 +52,15 @@
           <li><a class="nav-link scrollto" href=" {{URL :: to ('/suppliers' )}}"">الموردون</a></li>
           <li><a class="nav-link scrollto"  href=" {{URL :: to ('/news' )}}"">الأخبار</a></li>
           <li><a class="nav-link scrollto" href="{{URL :: to ('/' )}}#contact">تواصل معنا </a></li>
+          <div class=" nav-item dropdown">
+                                               <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    {{ app()-> getLocale()=='ar'?'عربي':'English'}}
+                                               </a>
+
+                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <a class="dropdown-item"  href="{{url(app()->getLocale()=='ar'?'en':'ar')}}">{{ app()-> getLocale()=='ar'?'English':'عربي'}}</a>
+                                                </div>
+                                               </div>
         </ul>
         
         

@@ -67,3 +67,18 @@ Route::group(['middleware' => ['auth']], function () {
 });
 
 
+
+//Language
+
+
+Route::group(['prefix' => '{locale}','where' => ['locale' => '[a-z]{2}'],
+'middleware' => 'setLocale'],
+ function () {
+    Route::get('/', function () {
+        return view('welcome');
+       })->name('/homepage');
+   
+    //Route::get('/aboutUs', [AboutUsSiteController::class, 'index'])->name('/aboutUs');
+
+  
+});
