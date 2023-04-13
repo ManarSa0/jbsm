@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\SuppliersAdminController;
 use App\Http\Controllers\Admin\Our_groupAdminController;
 use App\Http\Controllers\Admin\NewsAdminController;
 use App\Http\Controllers\Admin\ImageAdminController;
+use App\Http\Controllers\Admin\SettingsAdminController;
 
 //WebSite 
 use App\Http\Controllers\Site\Our_groupController ;
@@ -48,6 +49,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('suppliers-data', SuppliersAdminController::class);
         Route::resource('group-data',Our_groupAdminController::class);
         Route::resource('image-data',ImageAdminController::class);
+        Route::resource('settings-data',SettingsAdminController::class);
+        
 
 
    

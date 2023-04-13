@@ -163,6 +163,13 @@
                      
                     </li>
                     
+                
+                    </li>
+                    <li><a class="has-arrow" href="{{ route('settings.index')}}"
+                    aria-expanded="false"><i class="mdi mdi-chart-bar"></i> 
+                    <span class="nav-text">setting</span> </a>
+                     
+                    </li>
 
    
                    
