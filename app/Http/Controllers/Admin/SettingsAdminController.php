@@ -28,7 +28,7 @@ class SettingsAdminController extends Controller
     public function create()
     {
         //
-        return view('admin.Settings.create');
+        return view('admin.settings.create');
     }
 
     /**

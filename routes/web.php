@@ -49,7 +49,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('suppliers-data', SuppliersAdminController::class);
         Route::resource('group-data',Our_groupAdminController::class);
         Route::resource('image-data',ImageAdminController::class);
-        Route::resource('settings-data',SettingsAdminController::class);
+        Route::resource('settings',SettingsAdminController::class);
         
 
 
