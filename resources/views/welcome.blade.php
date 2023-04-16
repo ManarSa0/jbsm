@@ -9,17 +9,17 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <h3 class="animate-charcter"> 
-              اهلا بكم في جندله لإدارة الأعمال</h3>
+            @lang('site.des_1') </h3>
           </div>
         </div>
       </div>
      <!-- <h2>اهلا بكم في   <span> جندله لإدارة الأعمال</span></h2>-->
     </p>
-      <h3>  مع جندله لإدارة الاعمال اوجدنا للاعمال حلول </p>
-        <span> تضم شركة حلول الاعمال فريق من الخبراء في مجالات متعددة لضمان تقديم خدمات متكاملة للعملاء</h3> </span>
+      <h3>  @lang('site.des_2') </p>
+        <span> @lang('site.des_2')  </h3> </span>
       </p>
       <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto ">اشترك معنا</a> <br>
+        <a href="#about" class="btn-get-started scrollto ">@lang('site.Subscribe') </a> <br>
         <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i> <span>شاهد الفيديو </span></a>
       </div>
     </div>
@@ -33,7 +33,7 @@
         <div class="container" data-aos="fade-up">
   
           <div class="section-header">
-            <h2>من نحن</h2>
+            <h2> @lang('site.About') </h2>
             <p>نحن جندله لإدارة الأعمال  تعمل وفق رؤى عصرية متجددة، نعتمد الابتكار منهجاً لنا في جميع أعمالنا، وقد اكتسبنا مكانتنا المتميزة في صناعة الأحداث وإدارة فعاليات الأعمال مستندين في ذلك على قيم الإبداع والتكامل الخدمي تحقيقاً لمزيد من التميز ومواكبة سباق التطور المتنامي بكل القطاعات والمجالات بما يتناسب مع تطلعات عملائنا وطموحاتهم   </p>
 
       <p>ومتخصصون في تقديم الحلول المختلفة للجهات الحكومية، وشبه الحكومية، وقطاع الأعمال الخاص الربحي، وغير الربحي في كل مشروع نعمل عليه نقترب نحو تحقيق الرؤية على أرض الواقع</p>
@@ -805,7 +805,7 @@
       <div class="container">
 
         <div class="section-header">
-          <h2>اتصل بنا</h2>
+          <h2>@lang('site.Connectus')  </h2>
         </div>
 
       </div>
@@ -819,13 +819,13 @@
           <div class="col-lg-4">
 
             <div class="info">
-              <h3>تواصل معنا
+              <h3>@lang('site.Connectus') 
               </h3>
 
               <div class="info-item d-flex">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h4>موقع</h4>
+                  <h4>@lang('site.location') </h4>
                   <p>الرياض, المملكة العربية السعودية
                   </p>
                 </div>
@@ -837,7 +837,7 @@
               <div class="info-item d-flex">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h4>استفسارات عامة</h4>
+                  <h4> @lang('site.inquiries')</h4>
                   <p>info@example.com</p>
                 </div>
               </div><!-- End Info Item -->
@@ -845,7 +845,7 @@
               <div class="info-item d-flex">
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
-                  <h4>الهاتف</h4>
+                  <h4>@lang('site.phone')</h4>
                   <p>+1 5589 55488 55</p>
                 </div>
               </div><!-- End Info Item -->

@@ -31,9 +31,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/our_group', [Our_groupController ::class, 'index']);
-Route::get('/suppliers', [SuppliersController ::class, 'index']);
-Route::get('/news', [NewsController ::class, 'index']);
 
 
 //Admin
@@ -77,8 +74,12 @@ Route::group(['prefix' => '{locale}','where' => ['locale' => '[a-z]{2}'],
     Route::get('/', function () {
         return view('welcome');
        })->name('/homepage');
-   
-    //Route::get('/aboutUs', [AboutUsSiteController::class, 'index'])->name('/aboutUs');
+       Route::get('/our_group', [Our_groupController ::class, 'index'])->name('/our_group');
+       Route::get('/suppliers', [SuppliersController ::class, 'index'])->name('/suppliers');
+       Route::get('/news', [NewsController ::class, 'index'])->name('/news');
+
+
+
 
   
 });

@@ -44,14 +44,14 @@
   <!-- Main-menu -->
   <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/' )}}"><span>الرئيسية</span> </a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/' )}}#about">من نحن</a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/' )}}#features">خدماتنا</a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/' )}}#services">مشاريعنا </a></li>
-          <li><a class="nav-link scrollto" href=" {{URL :: to ('/our_group' )}}"">مجموعتنا</a></li>
-          <li><a class="nav-link scrollto" href=" {{URL :: to ('/suppliers' )}}"">الموردون</a></li>
-          <li><a class="nav-link scrollto"  href=" {{URL :: to ('/news' )}}"">الأخبار</a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/' )}}#contact">تواصل معنا </a></li>
+          <li><a class="nav-link scrollto" href="{{ route('/homepage', app()->getLocale()) }}"><span>@lang('site.Homepage') </span> </a></li>
+          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#about">@lang('site.About')</a></li>
+          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#features">@lang('site.OurServices')</a></li>
+          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#services">@lang('site.OurProjects') </a></li>
+          <li><a class="nav-link scrollto" href=" {{ route('/our_group', app()->getLocale()) }} "">@lang('site.OurGroup')</a></li>
+          <li><a class="nav-link scrollto" href=" {{ route('/suppliers', app()->getLocale()) }} "">@lang('site.Suppliers')</a></li>
+          <li><a class="nav-link scrollto"  href=" {{ route('/news', app()->getLocale()) }}"">@lang('site.news')</a></li>
+          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#contact"> @lang('site.Connectus') </a></li>
           <div class=" nav-item dropdown">
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     {{ app()-> getLocale()=='ar'?'عربي':'English'}}
@@ -68,7 +68,7 @@
       </nav>
 
   <!-- Header-btn -->
-      <a class="btn-getstarted scrollto" href="index.html#about">اشترك معنا </a>
+      <a class="btn-getstarted scrollto" href="index.html#about">@lang('site.Subscribeus')  </a>
 
     </div>
   </header>
@@ -101,15 +101,17 @@
 </div>
 
 <div class="col-lg-2 col-md-7 footer-links">
-            <h4>روابط</h4>
-            <ul>
-              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/' )}}">الرئيسية</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="#">من نحن</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="#">خدماتنا</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="#">مشاريعنا</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/our_group' )}}">مجموعتنا</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="#">الأخبار</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="#">تواصل معنا</a></li>
+            <h4>@lang('site.Link')</h4>
+
+
+            <ul>          
+              <li><i class="bi bi-chevron-left"></i> <a href="{{ route('/homepage', app()->getLocale()) }}">@lang('site.Homepage')</a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/homepage' )}}#about">@lang('site.About') </a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href=" {{URL :: to ('/homepage' )}}#features">@lang('site.OurServices')</a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/homepage' )}}#services">@lang('site.OurProjects')</a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href=" {{ route('/our_group', app()->getLocale()) }} ">@lang('site.OurGroup')</a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href=" {{ route('/news', app()->getLocale()) }}">@lang('site.news')</a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/homepage' )}}#contact"> @lang('site.Connectus') </a></li>
             </ul>
           </div>
 
@@ -168,7 +170,9 @@
 
     <div id="preloader"></div>
  <!-- Vendor JS Files -->
-      <script src="{{ asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>      <script src="{{ asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
       <script src="{{ asset('public/vendor/aos/aos.js')}}"></script>
       <script src="{{ asset('public/vendor/glightbox/js/glightbox.min.js')}}"></script>
       <script src="{{ asset('public/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
