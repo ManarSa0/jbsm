@@ -15,7 +15,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>تفاصيل الأخبار</h2>
           <ol>
-          <li><a href="{{URL :: to ('/' )}}">الرئيسية</a></li>
+          <li><a href="{{URL :: to ('/' )}}">@lang('site.Homepage')</a></li>
             <li><a href=" {{URL :: to ('/news' )}}"">الأخبار</a></li>
             <li>التفاصيل</li>
           </ol>

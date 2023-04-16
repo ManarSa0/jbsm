@@ -8,10 +8,10 @@
   <div class="container">
 
     <div class="d-flex justify-content-between align-items-center">
-      <h2>مجموعتنا</h2>
+      <h2>@lang('site.OurGroup')</h2>
       <ol>
-        <li><a href="{{URL :: to ('/' )}}">الرئيسية</a></li>
-        <li>مجموعتنا</li>
+        <li><a href="{{URL :: to ('/' )}}">@lang('site.Homepage')</a></li>
+        <li>@lang('site.OurGroup')</li>
       </ol>
     </div>
 
@@ -45,10 +45,11 @@
 
 <div class="row g-5">
 
+
   <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-    <h3> <em>{{ $data->title_ar }}</em></h3>
-    <p> {{ $data->desc_ar }}</p>
-    <a class="cta-btn align-self-start" href="#">أذهب الى الموقع</a>
+    <h3> <em>{{ $data->{'title_'.app()->getLocale()}  }}</em></h3>
+    <p> {{ $data->{'desc_'.app()->getLocale()} }}</p>
+    <a class="cta-btn align-self-start" href="#"> @lang('site.go-site')</a>
   </div>
 
   <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">

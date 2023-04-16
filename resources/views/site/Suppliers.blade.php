@@ -8,10 +8,10 @@
   <div class="container">
 
     <div class="d-flex justify-content-between align-items-center">
-      <h2> الموردون</h2>
+      <h2> @lang('site.Suppliers')</h2>
       <ol>
-        <li><a href="{{URL :: to ('/' )}}">الرئيسية</a></li>
-        <li>الموردون</li>
+        <li><a href="{{URL :: to ('/' )}}">@lang('site.Homepage')</a></li>
+        <li>@lang('site.Suppliers')</li>
       </ol>
     </div>
 
@@ -22,7 +22,10 @@
  <section id="blog" class="blog">
   <div class="container" data-aos="fade-up">
 
-    <div class="row g-5">
+    <div class="row g-5">         
+       <h3 class="title"
+       >@lang('site.des_4') </h3>
+
 
       <div class="col-lg-8">
 
@@ -30,7 +33,6 @@
 
     
 
-          <h3 class="title">مرحبا بكم في صفحة علاقات الموردين الخاصة بشركة جندلة ، والتي يسرّنا من خلالها التواصل مع المنشآت المحلية والدولية بالإضافة إلى أصحاب العمل الحر المتخصصين في مجالاتهم.</h3>
 
       
           @foreach($allData as $data)
@@ -38,9 +40,9 @@
           <div class="content">
             <blockquote>
               <h1>
-              {{ $data->title_ar }}
+              {{ $data->{'title_'.app()->getLocale()}  }}
               </h1>
-              <h5> {{ $data->desc_ar }}</h5>
+              <h5> {{ $data->{'desc_'.app()->getLocale()} }}</h5>
             </blockquote>
           </div>
           @endforeach
@@ -74,24 +76,23 @@
         <div class="sidebar">
 
           <h3>
-            القطاعات التي تتعاقد معها جندلة بشكل مستمر
-          </h3>
-          <p>نحن في بحث دائم عن موردي خدمات وسلع في القطاعات المختلفة، والتي تتضمن:</p>              
+          @lang('site.des_5')          </h3>
+          <p> @lang('site.des_6')  </p>              
           <blockquote>
            <p>
-            حلول الأعمال</p>
+           @lang('site.business-solutions')  </p>
           </blockquote>
           <blockquote>
-           <p>إدارة الفعاليات</p>
+           <p>  @lang('site.Event-management')</p>
           </blockquote>
           <blockquote>
-           <p>تقنية المعلومات</p>
+           <p> @lang('site.information-technology')</p>
           </blockquote>
           <blockquote>
-           <p>الاستشارات</p>
+           <p>@lang('site.Consulting')</p>
           </blockquote>
           <blockquote>
-           <p>الخدمات القانونية</p>
+           <p>@lang('site.Legal-services')</p>
           </blockquote>
 
         </div><!-- End Blog Sidebar -->

@@ -17,10 +17,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>الأخبار</h2>
+          <h2>@lang('site.news')</h2>
           <ol>
-          <li><a href="{{URL :: to ('/' )}}">الرئيسية</a></li>
-            <li>الأخبار</li>
+          <li><a href="{{URL :: to ('/' )}}">@lang('site.Homepage')</a></li>
+            <li>@lang('site.news')</li>
           </ol>
         </div>
 
@@ -45,7 +45,7 @@
                   </div>
 
                   <h2 class="title">
-                    <a href="blog-details.html">{{ $data->title_ar }}</a>
+                    <a href="blog-details.html">        {{ $data->{'title_'.app()->getLocale()}  }}</a>
                   </h2>
 
                   <div class="meta-top">
@@ -56,12 +56,12 @@
 
                   <div class="content">
                     <p>
-                    {{ $data->desc_ar }}
+                    {{ $data->{'desc_'.app()->getLocale()} }}
                     </p>
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
-                    <a href="blog-details.html">Read More</a>
+                    <a href="blog-details.html">@lang('site.More') </a>
                   </div>
                  
 
@@ -243,12 +243,12 @@
             <div class="sidebar">
 
               <div class="sidebar-item search-form">
-                <h3 class="sidebar-title">Search</h3>
+                <h3 class="sidebar-title">@lang('site.Search')</h3>
                 <form action="" class="mt-3">
                   <input type="text">
                   <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
-              </div><!-- End sidebar search formn-->
+              </div><!-- End sidebar search formn--
 
               <div class="sidebar-item categories">
                 <h3 class="sidebar-title">Categories</h3>
@@ -263,7 +263,7 @@
               </div><!-- End sidebar categories-->
 
               <div class="sidebar-item recent-posts">
-                <h3 class="sidebar-title">Recent Posts</h3>
+                <h3 class="sidebar-title">@lang('site.Recent-Posts')</h3>
 
                 <div class="mt-3">
                 @foreach($allData as $data)
@@ -311,7 +311,7 @@
 
                 </div>
 
-              </div><!-- End sidebar recent posts-->
+              </div><!-- End sidebar recent posts--
 
               <div class="sidebar-item tags">
                 <h3 class="sidebar-title">Tags</h3>

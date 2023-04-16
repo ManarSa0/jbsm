@@ -34,9 +34,9 @@
   
           <div class="section-header">
             <h2> @lang('site.About') </h2>
-            <p>نحن جندله لإدارة الأعمال  تعمل وفق رؤى عصرية متجددة، نعتمد الابتكار منهجاً لنا في جميع أعمالنا، وقد اكتسبنا مكانتنا المتميزة في صناعة الأحداث وإدارة فعاليات الأعمال مستندين في ذلك على قيم الإبداع والتكامل الخدمي تحقيقاً لمزيد من التميز ومواكبة سباق التطور المتنامي بكل القطاعات والمجالات بما يتناسب مع تطلعات عملائنا وطموحاتهم   </p>
+            <p>  @lang('site.des_7')  </p>
 
-      <p>ومتخصصون في تقديم الحلول المختلفة للجهات الحكومية، وشبه الحكومية، وقطاع الأعمال الخاص الربحي، وغير الربحي في كل مشروع نعمل عليه نقترب نحو تحقيق الرؤية على أرض الواقع</p>
+      <p> @lang('site.des_8')  </p>
           </div>
   
           <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
@@ -48,13 +48,13 @@
             </div>
   
             <div class="col-lg-7">
-              <h3 class="pt-0 pt-lg-5">شركة حلول الأعمال لتقديم جميع الخدمات</h3>
+              <h3 class="pt-0 pt-lg-5">      @lang('site.des_9')</h3>
   
               <!-- Tabs -->
               <ul class="nav nav-pills mb-3">
-                <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">رؤيتنا</a></li>
-                <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">مجتمعنا</a></li>
-                <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">الكتيب التعريفي للشركة</a></li>
+                <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1"> @lang('site.Ourvision')</a></li>
+                <li><a class="nav-link" data-bs-toggle="pill" href="#tab2"> @lang('site.ourcommunity')</a></li>
+                <li><a class="nav-link" data-bs-toggle="pill" href="#tab3"> @lang('site.Companybrochure') </a></li>
               </ul><!-- End Tabs -->
   
               <!-- Tab Content -->
@@ -62,13 +62,13 @@
   
                 <div class="tab-pane fade show active" id="tab1">
   
-                  <p class="fst-italic">رؤيتنا هي أن نتفرد بمصاف صُنّاع فعاليات الأعمال عالمياً من خلال تقديم حلول مبتكرة ارتكازاً على القيم وارتكازاً على القيم واستناداً إلى البحث والتحليل المستمر للاتجاهات السوقية ودراسة متغيراتها</p>
+                  <p class="fst-italic">  @lang('site.des_10') </p>
   
                   <div class="d-flex align-items-center mt-4">
                     <i class="bi bi-check2"></i>
                     <h4>نحن نتفهم ديناميكيات اتجاهات صناعة الحدث في العالم</h4>
                   </div>
-                  <p> في مجموعة حلول الأعمال نسعى دائماً إلى تطوير مفهوم جديد للأحداث وفعاليات الأعمال يلبي احتياجات السوق ورغباته ويوفر لجميع شركائنا فرصاً جديدة لبناء العلاقات والشبكات لتحقيق نمو أعمال مستدام.</p>
+                  <p> @lang('site.des_11')</p>
   
                   <div class="d-flex align-items-center mt-4">
                     <i class="bi bi-check2"></i>

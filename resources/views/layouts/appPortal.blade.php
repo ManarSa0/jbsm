@@ -45,13 +45,13 @@
   <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="{{ route('/homepage', app()->getLocale()) }}"><span>@lang('site.Homepage') </span> </a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#about">@lang('site.About')</a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#features">@lang('site.OurServices')</a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#services">@lang('site.OurProjects') </a></li>
+          <li><a class="nav-link scrollto" href="{{ route('/homepage', app()->getLocale()) }}#about">@lang('site.About')</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('/homepage', app()->getLocale()) }}#features">@lang('site.OurServices')</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('/homepage', app()->getLocale()) }}#servicess">@lang('site.OurProjects') </a></li>
           <li><a class="nav-link scrollto" href=" {{ route('/our_group', app()->getLocale()) }} "">@lang('site.OurGroup')</a></li>
           <li><a class="nav-link scrollto" href=" {{ route('/suppliers', app()->getLocale()) }} "">@lang('site.Suppliers')</a></li>
           <li><a class="nav-link scrollto"  href=" {{ route('/news', app()->getLocale()) }}"">@lang('site.news')</a></li>
-          <li><a class="nav-link scrollto" href="{{URL :: to ('/homepage' )}}#contact"> @lang('site.Connectus') </a></li>
+          <li><a class="nav-link scrollto" href="route('/homepage' , app()->getLocale()) }}#contact"> @lang('site.Connectus') </a></li>
           <div class=" nav-item dropdown">
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     {{ app()-> getLocale()=='ar'?'عربي':'English'}}
@@ -106,12 +106,12 @@
 
             <ul>          
               <li><i class="bi bi-chevron-left"></i> <a href="{{ route('/homepage', app()->getLocale()) }}">@lang('site.Homepage')</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/homepage' )}}#about">@lang('site.About') </a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href=" {{URL :: to ('/homepage' )}}#features">@lang('site.OurServices')</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/homepage' )}}#services">@lang('site.OurProjects')</a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href="{{ route('/homepage', app()->getLocale()) }}#about">@lang('site.About') </a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href=" {{ route('/homepage', app()->getLocale()) }}#features">@lang('site.OurServices')</a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href=" {{ route('/homepage', app()->getLocale()) }}#servicess">@lang('site.OurProjects')</a></li>
               <li><i class="bi bi-chevron-left"></i> <a href=" {{ route('/our_group', app()->getLocale()) }} ">@lang('site.OurGroup')</a></li>
               <li><i class="bi bi-chevron-left"></i> <a href=" {{ route('/news', app()->getLocale()) }}">@lang('site.news')</a></li>
-              <li><i class="bi bi-chevron-left"></i> <a href="{{URL :: to ('/homepage' )}}#contact"> @lang('site.Connectus') </a></li>
+              <li><i class="bi bi-chevron-left"></i> <a href=" {{ route('/homepage' , app()->getLocale()) }}#contact"> @lang('site.Connectus') </a></li>
             </ul>
           </div>
 
